@@ -2,72 +2,69 @@
 
 Complete preparation kit for **Infosys Specialist Programmer (SP)** and **Digital Specialist Engineer (DSE)** off-campus recruitment coding round.
 
-## 📊 Test Pattern
+## 📝 5 Full Mock Tests (20 Questions!)
 
-| Level | Topics | Time |
-|-------|--------|------|
-| **Easy** | Greedy, Heap, Sorting, Binary Search | 30 min |
-| **Medium** | Kadane's, DP, Sliding Window, Two Pointers | 45 min |
-| **Hard** | Graph+DP, Matching, Bitmask DP | 50 min |
-| **Complex** | Layered Graph DP, Segment Trees | 55 min |
+Each mock test has **4 questions** in exact Infosys exam format with **Question → Answer** right after.
+
+| Mock Test | Easy | Medium | Hard | Complex |
+|-----------|------|--------|------|---------|
+| **[Test 1](MOCK_TEST_1.md)** | Rope Connection (Heap) | Chef's Special (Greedy+Heap) | Treasure Split (Partition DP) | Grid Treasure Hunt (3D DP) |
+| **[Test 2](MOCK_TEST_2.md)** | Candy Distribution (Two-Pass Greedy) | Water Container (Two Pointers) | Coin Change Ways (Unbounded Knapsack) | Network Delay (Dijkstra) |
+| **[Test 3](MOCK_TEST_3.md)** | Stock Profit (Track Min) | Subarray Sum = K (Prefix+HashMap) | LIS (Binary Search) | Island Count (BFS/DFS) |
+| **[Test 4](MOCK_TEST_4.md)** | Sliding Window Max (Monotonic Deque) | Job Scheduling (DP+BinarySearch) | Edit Distance (2D DP) | Cycle Detection (DFS 3-Color) |
+| **[Test 5](MOCK_TEST_5.md)** | Duplicate Finder (Floyd's) | Merge Intervals (Sort+Scan) | 0/1 Knapsack (DP) | Task Scheduling (Topological Sort) |
+
+## 📋 All 20 Patterns Covered
+
+| # | Pattern | Question |
+|---|---------|----------|
+| 1 | Min Heap Greedy | Rope Connection |
+| 2 | Greedy + Max Heap | Chef's Special |
+| 3 | Partition DP | Treasure Split |
+| 4 | 3D DP (Grid + Resource) | Grid Treasure Hunt |
+| 5 | Two-Pass Greedy | Candy Distribution |
+| 6 | Two Pointers | Water Container |
+| 7 | Unbounded Knapsack | Coin Change Ways |
+| 8 | Dijkstra's Algorithm | Network Delay |
+| 9 | Track Running Min/Max | Stock Profit |
+| 10 | Prefix Sum + HashMap | Subarray Sum = K |
+| 11 | Binary Search (Patience Sort) | LIS |
+| 12 | BFS/DFS Flood Fill | Island Count |
+| 13 | Monotonic Deque | Sliding Window Max |
+| 14 | DP + Binary Search | Job Scheduling |
+| 15 | 2D String DP | Edit Distance |
+| 16 | DFS 3-Color | Cycle Detection |
+| 17 | Floyd's Cycle Detection | Duplicate Finder |
+| 18 | Sort + Linear Merge | Merge Intervals |
+| 19 | 0/1 Knapsack DP | Knapsack |
+| 20 | Topological Sort + Longest Path | Task Scheduling |
 
 ## 📁 Repository Structure
 
 ```
-├── README.md
-├── PREP_GUIDE.md              # Full preparation guide with expected questions
-├── solutions/
-│   ├── food_stamps.py         # Easy: Greedy + Binary Search on threshold
-│   ├── mss_with_swaps.py      # Medium: Brute-force + Greedy swaps
-│   ├── lock_and_parity.py     # Hard: Min even-cost pair matching
-│   └── layer_split_path.py    # Complex: Layered Graph DP
-└── expected_questions/
-    ├── minimize_max_load.py   # Binary Search on Answer
-    ├── connect_ropes.py       # Min-Heap Greedy
-    ├── max_score_negations.py # Heap
-    ├── minimum_platforms.py   # Sweep Line
-    ├── partition_max_sum.py   # DP
-    └── shortest_path_k_free.py # Modified Dijkstra
+├── MOCK_TEST_1.md          ← Question Paper (with solutions below each Q)
+├── MOCK_TEST_2.md
+├── MOCK_TEST_3.md
+├── MOCK_TEST_4.md
+├── MOCK_TEST_5.md
+├── SOLUTIONS_MOCK_TEST_1.md ← Detailed thinking process (Hindi-English)
+├── PREP_GUIDE.md            ← Full prep guide + strategy
+├── solutions/               ← Actual Infosys question solutions
+│   ├── food_stamps.py
+│   ├── mss_with_swaps.py
+│   ├── lock_and_parity.py
+│   └── layer_split_path.py
+├── expected_questions/      ← Extra practice
+└── mock_test_1/             ← Tested Python solutions
 ```
 
-## ✅ Actual Questions & Solutions
+## 🏆 Exam Day Strategy
 
-| # | Question | Difficulty | Approach | Status |
-|---|----------|-----------|----------|--------|
-| 1 | **Food Stamps** | Easy | Binary Search + AP Sum Formula | ✅ All cases pass |
-| 2 | **MSS With Swaps** | Medium | O(n³) Brute Force + Greedy Swap | ✅ All cases pass |
-| 3 | **Lock & Parity** | Hard | Min Even-Cost Pair (Key Insight) | ✅ All cases pass |
-| 4 | **Layer-Split Path** | Complex | Layered Graph DP | ✅ All cases pass |
-
-## 🔮 Expected Questions
-
-| # | Question | Pattern |
-|---|----------|---------|
-| 1 | Minimize Maximum Load | Binary Search on Answer |
-| 2 | Minimum Cost to Connect Ropes | Min-Heap Greedy |
-| 3 | Maximum Score with K Negations | Heap |
-| 4 | Minimum Platforms | Sweep Line / Events |
-| 5 | Partition Array Max Sum | Dynamic Programming |
-| 6 | Shortest Path with K Free Passes | Modified Dijkstra |
-
-## 🏆 Quick Tips
-
-1. **Read ALL questions first** (5 min) — identify the Easy one
-2. **Python users**: Use `import sys; input = sys.stdin.readline` for fast I/O
-3. **Edge cases**: n=1, m=0, all negatives, max constraints
-4. **Partial credit counts** — even brute-force on Hard is better than nothing
-
-## 📋 Top Patterns to Know
-
-| Pattern | When to Use |
-|---------|-------------|
-| Max-Heap Greedy | Repeatedly pick best option |
-| Binary Search on Answer | "Minimize max" / "Maximize min" |
-| Kadane's Algorithm | Maximum subarray sum |
-| 0/1 Knapsack DP | Select items with weight limit |
-| Dijkstra's Algorithm | Shortest path weighted graph |
-| BFS/DFS | Graph traversal / components |
-
----
+1. **Read ALL 4 questions first** (5 min)
+2. **Easy first** (25 min) — full marks guaranteed
+3. **Medium next** (40 min) — usually Greedy/DP variant
+4. **Hard** (50 min) — find the key insight
+5. **Complex** (50 min) — partial credit counts
+6. **Last 10 min** — edge cases check
 
 **Good luck! 🚀**
